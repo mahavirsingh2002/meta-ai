@@ -39,9 +39,9 @@ async function getAIReply(message) {
     },
     {
       headers: {
-        Authorization: Bearer $ {GROQ_API_KEY},
-        "Content-Type": "application/json"
-      }
+  Authorization: `Bearer ${GROQ_API_KEY}`,
+  "Content-Type": "application/json"
+}
     }
   );
 

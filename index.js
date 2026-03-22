@@ -51,7 +51,7 @@ async function getAIReply(message) {
 // 📩 Send message to user
 async function sendMessage(senderId, text) {
   await axios.post(
-    https://graph.facebook.com/v18.0/me/messages?access_token=${PAGE_ACCESS_TOKEN},
+  `https://graph.facebook.com/v18.0/me/messages?access_token=${PAGE_ACCESS_TOKEN}`,
     {
       recipient: { id: senderId },
       message: { text }
